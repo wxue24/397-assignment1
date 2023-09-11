@@ -3,13 +3,16 @@
 ## Marketing RL Loop Design
 
 Agent: Marketing bot
+
 Action space: 
 - Choose medium of content (ie commercial, short form video, post, etc)
 - Choose platform to advertise on (ie social media, TV, radio, etc)
+  
 State:
 - Costs (ie production, platform costs, etc)
 - Successfulness of past marketing campaigns (ie type of advertisement, cost, revenue)
 - Metrics (ie number of viewers, customer conversion rate, etc)
+  
 Reward: The higher the viewer to cost ratio, the higher the reward
 
 Challenges: 
