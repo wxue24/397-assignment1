@@ -21,9 +21,6 @@ def calculateWater(elevationMap: list[int]):
         else:
             maxRightHeight[i] = max(maxRightHeight[i + 1], elevationMap[i + 1])
 
-    print(maxLeftHeight)
-    print(maxRightHeight)
-
     # Add up min of maxRight and maxLeft at each index and subtract elevation at that point
     for i in range(elevationMapLength):
         # add the max of the previously calculated value and 0, in case of negatives
@@ -32,4 +29,10 @@ def calculateWater(elevationMap: list[int]):
     return water
 
 
-print(calculateWater([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))
+
+if __name__ == "__main__":
+    # test cases
+    if calculateWater([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]) == 6:
+        print("passed")
+    else:
+        print("failed")
