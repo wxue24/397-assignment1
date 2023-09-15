@@ -19,3 +19,7 @@ Challenges:
 - This is a very complicated loop:
     - large action space and actions are non-binary
     - state is complex and difficult to observe (ie how to determine if revenue is caused by marketing) 
+
+## Dynamic Programming Problem
+
+Run program using `python3 dp.py`. Prints out either "passed" or "failed" for each test case.
